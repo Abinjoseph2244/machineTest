@@ -1,0 +1,29 @@
+#pageIndicators{
+    /* display: flex; */
+    margin: -4rem 0 3rem 0;
+}
+#pageIndicators > div{
+    gap:0.6rem;
+}
+@media screen and (max-width:1110px) {
+    #pageIndicators{
+        margin: 1rem 0 1rem 0;
+        place-items:center;
+        justify-content: center;
+    }
+}
+.pageIndicator{
+    border: 1px solid lightgray;
+    place-content: center;
+    place-items: center;
+    text-align: center;
+    padding: 0.3rem;
+    width:2rem;
+    height: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.pageSelected{
+    border: 1px solid gray;
+}
+  

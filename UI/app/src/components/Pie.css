@@ -1,0 +1,7 @@
+svg{
+    display: flex;
+}
+svg g:last-child{
+    align-self: flex-start;
+    background: #000;
+}

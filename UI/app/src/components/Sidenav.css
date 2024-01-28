@@ -1,0 +1,120 @@
+.navbar{
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: normal;
+    flex-wrap: nowrap;
+    height: 100vh;
+    padding: 0;
+    position: fixed;
+    min-width: 13rem;
+    z-index: 100;
+}
+.navbar-toggler{
+    height: min-content;
+    /* margin-top: -7rem; */
+    border: none;
+    outline: none;
+    box-shadow: none;
+    z-index: -100;
+    position: absolute;
+    left: 1rem;
+    top:0.5rem;
+    background: #e7d1d1;
+}
+/* .navbar-toggler:hover{
+} */
+.navbar-toggler:focus{
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus,
+.navbar-toggler-icon:hover {
+    /* outline:1px solid lightgray; */
+    /* box-shadow:1px solid lightgray; */
+    box-shadow: none;
+}
+
+.sidenav{
+    display: flex;
+    flex-direction: column;
+    border-right: 2px solid lightgray;
+    background: #20263A;
+    position: relative;
+}
+.sidenav .list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-end;
+}
+.sidenav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: flex-end;
+    gap:1.7rem;
+    min-width: 90%;
+    margin: 0;
+    padding: 0;
+}
+.sidenav ul li{
+    gap: 1rem;
+    width: 100%;
+    display: flex;
+    color: lightgray;
+    text-align: left;
+    align-items: center;
+    background: #1A1F30;
+    padding-left: 1rem;
+    line-height: 2.8rem;
+    padding-right: 1rem;
+    border-start-start-radius: 10px;
+    border-end-start-radius: 10px;
+}
+.sidenav ul li:hover,
+.sidenav ul li:focus,
+.sidenav ul li:active{
+    background: #fff;
+    color: gray;
+}
+.sidenavTitle{
+    /* min-width: 8rem;
+    max-width: 10rem; */
+    /* background: #000; */
+    padding: 2.3rem;
+}
+.sidenavTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sidenavTitle img:first-child{
+    height: 5rem;
+    width: 5rem;
+}
+.sidenavTitle span{
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: lightgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sidenav .logout{
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    line-height: 3rem;
+    left:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    gap:.4rem
+}
+.list-item{
+    cursor: pointer;
+}

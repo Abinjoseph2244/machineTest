@@ -1,0 +1,46 @@
+.profile{
+    display: flex;
+    line-height: 6rem;
+    place-items: center;
+    justify-content: space-between;
+    font-size: large;
+}
+.profile > div:first-child span{
+    letter-spacing: 0.3px;
+    font-family: sans-serif;
+}
+@media screen and (max-width:750px) {
+    .profile{
+        margin: 1rem;
+        margin-top: 1.3rem;
+    }
+}
+@media screen and (max-width:650px) {
+    .profile{
+        margin: 1rem;
+        margin-top: 1.6rem;
+    }
+}
+.profile div{
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    font-weight: 500;
+}
+.profile > div:last-child{
+    max-height: 4rem;
+    padding: .7rem;
+    gap:.4rem
+}
+.profile > div:last-child div{
+    display: flex;
+    flex-direction: column;
+    gap:.3rem;
+}
+.profile > div:last-child div span{
+    line-height: 1rem;
+}
+.profile > div:last-child div span:last-child{
+    line-height: 1rem;
+    font-size: small;
+}
